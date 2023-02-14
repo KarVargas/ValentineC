@@ -7,6 +7,17 @@
   <title>Document</title>
   <link href='https://fonts.googleapis.com/css?family=Helvetica' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="css.css" />
+<!-- <script>
+  const playButton = document.getElementById("play-button");
+  const video = document.getElementById("video");
+
+  playButton.addEventListener("click", function() {
+    video.style.display = "block";
+    video.src += "&autoplay=1";
+    playButton.style.display = "none";
+  });
+</script> -->
+
 </head>
 <body>
   <div class="container">
@@ -28,5 +39,26 @@
     <div class="shadow"></div>
     <span>credit for: Emily (Valentine's Day Card) https://codepen.io/thestemdiaries/pen/RwBeVMV</span>
   </div>
+  <button id="show-video-button">Ver Video</button>
+  <div id="video-container" style="display: none;">
+    <iframe src="https://www.youtube-nocookie.com/embed/GOmPWOyJZms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <button id="close-video-button">Cerrar</button>
+  </div>
+  <script>
+    const showVideoButton = document.getElementById('show-video-button');
+    const videoContainer = document.getElementById('video-container');
+    const closeVideoButton = document.getElementById('close-video-button');
+  
+    showVideoButton.addEventListener('click', function() {
+      videoContainer.style.display = 'block';
+    });
+  
+    closeVideoButton.addEventListener('click', function() {
+      videoContainer.style.display = 'none';
+    });
+  </script>
+  <!-- <button id="play-button">Reproducir video</button> -->
+  <!-- <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/GOmPWOyJZms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+  <!-- <iframe id="video" src="https://www.youtube.com/embed/GOmPWOyJZms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 </body>
 </html>
