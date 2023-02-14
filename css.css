@@ -4,7 +4,8 @@
 }
 
 h1 {
-  font-family: Solitreo;
+  font-family: Helvetica;
+  padding: 5px;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   width: 100vw;
   background: #fee2e9;
   font-family: "Pangolin", cursive;
-  font-size: 1vmin;
+  font-size: .7vmin;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +47,7 @@ body {
 
 .message {
   position: absolute;
-  top: 5vmin;
+  top: 0vmin;
 }
 
 .cover {
@@ -118,7 +119,7 @@ body {
   position: relative;
   width: 5vmin;
   height: 4vmin;
-  top: 7vmin;
+  top: 10vmin;
   left: -1vmin;
 }
 
